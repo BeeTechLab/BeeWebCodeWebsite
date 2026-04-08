@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Bee Tech Lab</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2 style="color:white;">Gallery</h2>
+    </header>
+
+    <section class="full-gallery" id="gallery">
+        <div class="gallery-box">
+            <img src="./images/1.jpg" onclick="openLightbox(this)">
+            <img src="./images/2.jpg" onclick="openLightbox(this)">
+            <img src="./images/3.jpg" onclick="openLightbox(this)">
+            <img src="./images/4.jpg" onclick="openLightbox(this)">
+            <img src="./images/5.jpg" onclick="openLightbox(this)">
+            <img src="./images/6.jpeg" onclick="openLightbox(this)">
+            <img src="./images/7.jpeg" onclick="openLightbox(this)">
+            <img src="./images/8.jpeg" onclick="openLightbox(this)">
+            <img src="./images/9.jpeg" onclick="openLightbox(this)">
+            <img src="./images/10.jpeg" onclick="openLightbox(this)">
+            <img src="./images/11.jpeg" onclick="openLightbox(this)">
+            <img src="./images/12.jpeg" onclick="openLightbox(this)">
+            <img src="./images/13.jpeg" onclick="openLightbox(this)">
+            <img src="./images/14.jpeg" onclick="openLightbox(this)">
+        </div>
+
+    </section>
+
+
+    <!-- <section id="gallery">
+        <h2>Gallery</h2>
+
+        <div class="gallery-box">
+            <img src="./images/1.jpg" onclick="openLightbox(this)">
+            <img src="./images/2.jpg" onclick="openLightbox(this)">
+            <img src="./images/3.jpg" onclick="openLightbox(this)">
+
+            <div class="more-box" onclick="openGallery()">
+                <img src="./images/4.jpg">
+                <div class="overlay">+ More Photos</div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img">
+    </div>
+
+    <script src="./js/api.js"></script>
+
+</body>
+
+</html>

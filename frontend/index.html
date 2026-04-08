@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Tech Lab</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo">
+        </div>
+
+        <nav id="nav-links">
+            <a href="#">Home</a>
+            <a href="#notice">Notice</a>
+            <a href="#course">Course Content</a>
+            <a href="#photo">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#location">Location</a>
+            <a href="#register">Registration</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background: url('images/3.jpg') no-repeat center center/cover; ">
+        <div class="hero-content">
+            <h1>Bee Tech Lab</h1>
+            <p><i>"Skilling to stay relevance"</i></p>
+            <a href="#register"><button>Join Now</button></a>
+        </div>
+    </section>
+
+
+
+    <!-- NOTICE CAROUSEL -->
+    <section id="notice">
+        <h2>Notice</h2>
+
+        <div class="carousel">
+            <div class="slides" id="slides">
+                <img src="./images/TYPING WARRIOR’S 2.png" alt="">
+                <img src="./images/13.jpeg" alt="">
+                <img src="./images/Earn a Government-Approved Certificate_page-0001.jpg  " alt="">
+            </div>
+
+            <!-- Buttons -->
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="course">
+        <h2>Course Content</h2>
+
+        <div class="course-grid">
+
+            <div class="course-card">
+                <a href="https://www.geeksforgeeks.org/computer-science-fundamentals/computer-fundamentals-tutorial/">
+                    <div class="icon">💻</div>
+                    <h3>Fundamentals of Computers</h3>
+                    <p>Learn basics with practical and 3D visual learning.</p><br>
+                    <p style="text-decoration: none;"><a
+                            href="https://www.geeksforgeeks.org/computer-science-fundamentals/computer-fundamentals-tutorial/">Learn
+                            More ←</a>
+                    </p>
+
+                </a>
+            </div>
+
+            <div class="course-card">
+                <a href="https://www.geeksforgeeks.org/ethical-hacking/windows-os-fundamentals/">
+                    <div class="icon">🖥️</div>
+                    <h3>Windows OS</h3>
+                    <p>Master operating system basics and navigation.</p><br>
+                    <p style="text-decoration: none;"><a
+                            href="https://www.geeksforgeeks.org/ethical-hacking/windows-os-fundamentals/">Learn More
+                            ←</a>
+                    </p>
+
+                </a>
+
+            </div>
+
+            <div class="course-card">
+                <a href="https://www.investintech.com/resources/articles/beginnersmsoffice/">
+                    <div class="icon">📊</div>
+                    <h3>MS Office</h3>
+                    <p>Word, Excel & PowerPoint for real-world skills.</p><br>
+                    <p style="text-decoration: none;"><a
+                            href="https://www.investintech.com/resources/articles/beginnersmsoffice/">Learn More ←</a>
+                    </p>
+
+                </a>
+
+            </div>
+
+            <div class="course-card">
+                <a href="https://cptc.libguides.com/digital_literacy?utm_source=chatgpt.com">
+                    <div class="icon">🌐</div>
+                    <h3>Internet & Tools</h3>
+                    <p>Modern tools and smart internet usage.</p><br>
+                    <p style="text-decoration: none;"><a
+                            href="https://cptc.libguides.com/digital_literacy?utm_source=chatgpt.com">Learn More ←</a>
+                    </p>
+
+                </a>
+
+            </div>
+
+            <div class="course-card">
+                <a href="https://www.kaspersky.com/resource-center/threats/what-is-cybercrime">
+                    <div class="icon">🔐</div>
+                    <h3>Cyber Awareness</h3>
+                    <p>Stay safe online with cyber security basics.</p> <br>
+                    <p style="text-decoration: none;"><a
+                            href="https://www.kaspersky.com/resource-center/threats/what-is-cybercrime">Learn More ←</a>
+                    </p>
+            </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+
+    <section id="photo">
+        <h2>Gallery</h2>
+
+        <div class="gallery-box">
+            <img src="./images/6.jpeg" onclick="openLightbox(this)">
+            <img src="./images/10.jpeg" onclick="openLightbox(this)">
+            <img src="./images/9.jpeg" onclick="openLightbox(this)">
+
+            <div class="more-box" onclick="openGallery()">
+                <img src="./images/4.jpg">
+                <div class="overlay">+ More Photos</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img">
+    </div>
+
+    <!-- ABOUT -->
+    <!-- ABOUT -->
+    <section id="about">
+
+        <!-- INTRO -->
+        <div class="about-container">
+            <div class="about-img">
+                <img src="./images/about.jpg">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    Bee Tech Lab is an initiative of Baptist English High School to prepare students for a digital
+                    future.
+                    Our goal is to build strong computer fundamentals and practical knowledge.
+                </p>
+                <p>
+                    At Bee Tech Lab, we focus on real-world skills including computer basics, modern tools, and cyber
+                    awareness,
+                    ensuring students are confident and ready for today’s digital world. By combining traditional
+                    teaching with
+                    modern methods, we aim to make learning both effective and enjoyable.
+                </p>
+                
+            </div>
+        </div>
+        <br><br>
+
+        <!-- PRINCIPAL -->
+        <div class="about-container reverse">
+            <div class="about-img">
+                <img src="./images/principal.jpg">
+            </div>
+            <div class="about-text">
+                <h2>Principal’s Vision</h2>
+                <p>
+                    This computer lab was established under the leadership and vision of Principal <b>Mr. DAILEE
+                        KAPE</b>,
+                    who strongly believes that digital education is essential for student development.
+                </p>
+                <p>
+                    His initiative and investment reflect his commitment to provide students with better opportunities
+                    and preparing them for future challenges. Through his support, the lab has become a platform where
+                    students can explore, learn, and grow with modern technology.
+                </p>
+            </div>
+
+        </div>
+        <br><br>
+
+        <!-- FOUNDER -->
+        <div class="about-container">
+            <div class="about-img">
+                <img src="./images/Default.jpg">
+            </div>
+            <div class="about-text">
+                <h2>Founder & Lead Instructor</h2>
+                <p>
+                    Bee Tech Lab was founded by <b>Mr. ELOW KAPE</b>, driven by a vision to make computer education
+                    simple, practical, and accessible for every student. With a strong focus on real-world skills, he
+                    has designed structured courses that cater to learners at different levels, helping them build
+                    confidence step by step.
+                </p>
+                <p>
+                    He also leads the lab’s digital presence—developing the website, managing social media, and creating
+                    visual content.
+                </p>
+                </p>
+                <p>
+                    As an instructor, he delivers interactive lessons through 3D visual learning, live demonstrations,
+                    and hands-on practice, creating an engaging and modern learning experience for students.
+                </p>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- MENTOR -->
+        <div class="about-container reverse">
+            <div class="about-img">
+                <img src="./images/Dely Athisii 2.jpg">
+            </div>
+            <div class="about-text">
+                <h2>Mentor & Lab Guide</h2>
+                <p>
+                    The lab is guided and supervised by <b>Mr. Dely Athisii</b>, who mentors students and maintains a
+                    positive
+                    learning environment.
+                </p>
+                <p>
+                    He ensures every student receives proper guidance and support, helping them stay motivated,
+                    confident, and consistent in their learning journey.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location">
+        <h2>Location</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.6461123396384!2d94.15269526926373!3d25.469865903909586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37489bd6ec18b291%3A0x327a02f3f1ad252!2sBaptist%20English%20High%20School%2C%20Rd%2C%20Shajouba%2C%20Manipur%20795104!5e1!3m2!1sen!2sin!4v1775128465300!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section id="register">
+        <h2>Register</h2>
+        <form id="demoForm" onsubmit="submitForm(event)">
+            <input type="text" placeholder="Name" id="student_name" required>
+            <input type="text" placeholder="Father's / Guardian Name" id="fathers_name" required>
+            <input type="tel" placeholder="Phone Number" id="phone_number" required>
+            <input type="email" placeholder="Email Address" id="email" required>
+
+            <select id="qualification" required>
+                <option value="">Qualification</option>
+                <option>10th Pass</option>
+                <option>12th Pass</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- CONTACT -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+
+            <!-- LEFT -->
+            <div class="footer-box">
+                <h2>Bee Tech Lab</h2>
+                <p>
+                    <b>MOTTO:</b>
+                    <i>"Skilling to stay relevance"</i><br>
+                    Empowering students with digital skills, modern tools, and real-world
+                    knowledge to succeed in today's technology-driven world.
+                </p>
+            </div>
+
+            <!-- LINKS -->
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#course">Courses</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- SCHOOL INFO -->
+            <div class="footer-box">
+                <h3>School Info</h3>
+                <p>Baptist English High School</p>
+                <p>Shajouba Mao, P.O Tadubi</p>
+                <p>Senapati District</p>
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="footer-box">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/beetech_lab?igsh=NDNpdTZ3YXVld3Yw"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1aXsMrFYpe/"><i class="fab fa-facebook-f"></i></a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/918837464774" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <h3>Contact :</h3>
+                    <p>+91 7005608827 <br>+91 7005050939 <br>+91 8837464774</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Bee Tech Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+    <script src="./js/api.js"></script>
+    <div id="popup" class="popup">
+        <div class="popup-box">
+            <p id="popup-message">Success</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+</body>
+
+</html>
